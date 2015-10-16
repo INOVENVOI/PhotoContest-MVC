@@ -1,0 +1,14 @@
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.dll.config
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.dll
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.pdb
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.dll
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.xml
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.csprojResolveAssemblyReference.cache
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.dll
+c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.pdb
