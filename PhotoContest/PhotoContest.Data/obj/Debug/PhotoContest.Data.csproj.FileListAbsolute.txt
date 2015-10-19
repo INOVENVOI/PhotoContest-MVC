@@ -14,3 +14,19 @@ c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContest
 c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContest.Data\obj\Debug\PhotoContest.Data.dll
 c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContest.Data\obj\Debug\PhotoContest.Data.pdb
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContest.Data.dll.config
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContest.Data.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContest.Data.pdb
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\EntityFramework.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContext.Models.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContext.Models.pdb
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\EntityFramework.xml
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\obj\Debug\PhotoContest.Data.csprojResolveAssemblyReference.cache
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\obj\Debug\PhotoContest.Data.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContest.Data\obj\Debug\PhotoContest.Data.pdb

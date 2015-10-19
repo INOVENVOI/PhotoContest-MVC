@@ -12,3 +12,17 @@ c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext
 c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.csprojResolveAssemblyReference.cache
 c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.dll
 c:\users\daniela\documents\visual studio 2013\Projects\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.pdb
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.dll.config
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.pdb
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.xml
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.csprojResolveAssemblyReference.cache
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.dll
+C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.pdb
