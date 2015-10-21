@@ -1,17 +1,19 @@
 ﻿namespace PhotoContext.Models
 {
-    using System.Collections.Generic;
-
     public class Vote
     {
-        public int Id { get; set; }
+        public virtual int Id { get; set; }
 
-        public string UserId { get; set; }
+        public virtual string UserId { get; set; } // Voter
 
-        public User User { get; set; }
+        public virtual User User { get; set; } //Voter
 
-        public string PicturesInContestsId { get; set; }
+        public virtual int PictureId { get; set; }
 
-        public PicturesInContests PicturesInContests { get; set; }
+        public virtual Picture Picture { get; set; }
+
+        public virtual int ContestId { get; set; }
+
+        public virtual Contest Contest { get; set; }
     }
 }

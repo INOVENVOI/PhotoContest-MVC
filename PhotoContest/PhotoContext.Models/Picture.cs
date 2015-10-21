@@ -1,13 +1,15 @@
 ﻿namespace PhotoContext.Models
 {
+    using System.Collections.Generic;
+
     public class Picture
     {
         public virtual int Id { get; set; }
 
-        public virtual string UserId { get; set; }
+        public virtual string OwnerId { get; set; }
 
-        public virtual User Owner { get; set; }
+        public virtual User Owner { get; set; } // Owner
 
-        public virtual PicturesInContests PicturesInContests { get; set; }
+        public virtual ICollection<Contest> Contests { get; set; }
     }
 }

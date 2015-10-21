@@ -8,15 +8,13 @@
 
     public class User : IdentityUser
     {
-        public virtual bool HasVoted { get; set; }
+        public virtual ICollection<Contest> Contests { get; set; }
 
-        public virtual ICollection<Contest> CreatedContests { get; set; }
+        //public virtual ICollection<Contest> JoinedContests { get; set; }
 
-        public virtual ICollection<Contest> JoinedContests { get; set; }
+        //public virtual ICollection<Picture> Pictures { get; set; }
 
-        public virtual ICollection<Picture> Pictures { get; set; }
-
-        public virtual ICollection<Vote> Votes { get; set; }
+        //public virtual ICollection<Vote> Votes { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<User> manager)
         {
