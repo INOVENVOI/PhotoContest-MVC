@@ -1,0 +1,1 @@
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.csprojResolveAssemblyReference.cache
