@@ -26,3 +26,17 @@ C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.M
 C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.dll
 C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.pdb
 C:\Users\dimitar.stoyanov\Downloads\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.csprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.dll.config
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.pdb
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.csprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.pdb

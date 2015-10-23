@@ -9,6 +9,7 @@ using PhotoContest.Web.Models;
 
 namespace PhotoContest.Web
 {
+    using Data;
     using PhotoContext.Models;
 
     public partial class Startup

@@ -9,6 +9,7 @@ using Microsoft.Owin.Security;
 
 namespace PhotoContest.Web
 {
+    using Data;
     using PhotoContext.Models;
 
     public class EmailService : IIdentityMessageService

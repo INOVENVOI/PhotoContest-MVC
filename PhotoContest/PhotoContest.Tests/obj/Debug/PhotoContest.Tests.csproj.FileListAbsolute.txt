@@ -1,1 +1,16 @@
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContest.Tests.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContest.Tests.pdb
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContest.Data.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContext.Models.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContest.Data.pdb
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContext.Models.pdb
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.pdb

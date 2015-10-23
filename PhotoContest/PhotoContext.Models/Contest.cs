@@ -5,16 +5,35 @@
 
     public class Contest
     {
-        public virtual int Id { get; set; }
+        private ICollection<Picture> pictures;
+        private ICollection<User> participants;
+
+        public Contest()
+        {
+            this.pictures = new HashSet<Picture>();
+            this.participants = new HashSet<User>();
+        }
+
+        public int Id { get; set; }
 
         [Required]
-        public virtual string Name { get; set; }
+        public string Title { get; set; }
 
-        public virtual string OrganizerId { get; set; }
+        public string Description { get; set; }
+
+        public string OrganizerId { get; set; }
 
         public virtual User Organizer { get; set; } // Organizer
 
-        public virtual ICollection<User> Users { get; set; } // Users is Contest
+        public virtual RewardStrategy RewardStrategy { get; set; }
+
+        public virtual VotingStrategy VotingStrategy { get; set; }
+
+        public virtual ParticipationStrategy ParticipationStrategy { get; set; }
+
+        public virtual DeadlineStrategy DeadlineStrategy { get; set; }
+
+        public virtual ICollection<User> Participants { get; set; } // Users is Contest
 
         public virtual ICollection<Picture> Pictures { get; set; }
     }
