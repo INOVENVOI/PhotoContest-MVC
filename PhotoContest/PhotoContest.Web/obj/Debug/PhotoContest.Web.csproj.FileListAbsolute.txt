@@ -239,3 +239,10 @@ C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-M
 C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\obj\Debug\PhotoContest.Web.csprojResolveAssemblyReference.cache
 C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\obj\Debug\PhotoContest.Web.dll
 C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\obj\Debug\PhotoContest.Web.pdb
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\Ninject.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\Ninject.Web.Common.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\WebActivatorEx.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\Ninject.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\Ninject.Web.Common.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\Ninject.Web.Mvc.xml

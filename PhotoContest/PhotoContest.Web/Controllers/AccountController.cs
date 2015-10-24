@@ -9,24 +9,23 @@ using PhotoContest.Web.Models;
 
 namespace PhotoContest.Web.Controllers
 {
+    using Data.UnitOfWork;
     using PhotoContext.Models;
 
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
-        public AccountController()
-        {
-        }
-
-        public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
+        public AccountController(IPhotoContestData data, ApplicationUserManager userManager, ApplicationSignInManager signInManager)
+            : base(data)
         {
             UserManager = userManager;
             SignInManager = signInManager;
         }
 
+        
         public ApplicationSignInManager SignInManager
         {
             get

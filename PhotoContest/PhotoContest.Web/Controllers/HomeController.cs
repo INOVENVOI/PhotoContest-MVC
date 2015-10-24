@@ -2,8 +2,15 @@
 
 namespace PhotoContest.Web.Controllers
 {
-    public class HomeController : Controller
+    using Data.UnitOfWork;
+
+    public class HomeController : BaseController
     {
+        public HomeController(IPhotoContestData data)
+            : base(data)
+        {
+        }
+
         public ActionResult Index()
         {
             return View();
