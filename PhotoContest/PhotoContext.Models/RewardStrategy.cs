@@ -21,8 +21,6 @@ namespace PhotoContext.Models
 
         public virtual User Winner { get; set; }
 
-        public int PrizeId { get; set; }
-
         public virtual ICollection<Prize> Prizes { get; set; }
 
     }

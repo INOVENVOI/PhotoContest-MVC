@@ -2,6 +2,7 @@
 
 namespace PhotoContest.Web.Controllers
 {
+    using System.Linq;
     using Data.UnitOfWork;
 
     public class HomeController : BaseController
@@ -13,7 +14,9 @@ namespace PhotoContest.Web.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var pictures = this.Data.Pictures.All()
+                .OrderBy(p => p.Votes.Count);
+            return View(pictures);
         }
 
         public ActionResult About()
