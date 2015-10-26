@@ -8,7 +8,7 @@ namespace PhotoContest.Data.Migrations
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
     using PhotoContext.Models;
-
+    
 
     public sealed class Configuration : DbMigrationsConfiguration<PhotoContest.Data.PhotoDbContext>
     {
@@ -118,6 +118,7 @@ namespace PhotoContest.Data.Migrations
             //    Contest = contest
             //};
 
+            
             //context.Votes.Add(vote);
 
             //context.SaveChanges();

@@ -15,7 +15,8 @@
 
         public int Id { get; set; }
 
-        //public byte[] Content { get; set; }
+        public byte?[] Image { get; set; }
+
         public string ImageURL { get; set; }
 
         public string OwnerId { get; set; }
