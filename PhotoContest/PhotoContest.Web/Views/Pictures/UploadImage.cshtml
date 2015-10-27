@@ -1,21 +1,34 @@
-﻿@using PhotoContest.Web.Helpers
-@{  WebImage photo = null;
-  var newFileName = "";
-  var imagePath = "";
+﻿@using System.Linq
+@using Glimpse.Core.ClientScript
+@using PhotoContest.Web.Helpers
+@using PhotoContest.Data;
+@using Microsoft.AspNet.Identity;
+@using PhotoContext.Models
+@{  
+    WebImage photo = null;
+    var newFileName = "";
+    var imagePath = "";
+    var context = new PhotoDbContext();
 
-  if (IsPost)
-  {
-      photo = WebImage.GetImageFromRequest();
-      if (photo != null)
-      {
-          newFileName = Guid.NewGuid().ToString() + "_" +
-              Path.GetFileName(photo.FileName);
-          imagePath = @"images\" + newFileName;
+    if (IsPost)
+    {
+        photo = WebImage.GetImageFromRequest();
+        if (photo != null)
+        {
+            var userId = this.User.Identity.GetUserId();
 
-          photo.Save(@"~\" + imagePath);
-          
-      }
-  }
+            if (userId != null)
+            {
+                //context.Users.FirstOrDefault(u => u.Id == userId).Pictures.Add();
+            }
+
+            newFileName = Guid.NewGuid().ToString() + "_" +
+                Path.GetFileName(photo.FileName);
+            imagePath = @"images\" + newFileName;
+
+            photo.Save(@"~\" + imagePath);
+        }
+    }
 }
 <!DOCTYPE html>
 <html>
