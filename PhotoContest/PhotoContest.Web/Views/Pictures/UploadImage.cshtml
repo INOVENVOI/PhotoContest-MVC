@@ -16,10 +16,16 @@
         if (photo != null)
         {
             newFileName = Guid.NewGuid().ToString() + "_" +
-                Path.GetFileName(photo.FileName);
+            Path.GetFileName(photo.FileName);
             imagePath = @"images\" + newFileName;
+            var photos = new Stack<string>();
 
-            photo.Save(@"~\" + imagePath);
+            if (!photos.Contains(photo.FileName))
+            {
+                photo.Save(@"~\" + imagePath);
+                photos.Push(photo.FileName);
+            }
+
             var picture = new Picture
             {
                 ImageURL = imagePath
