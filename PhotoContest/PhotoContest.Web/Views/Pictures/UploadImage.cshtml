@@ -15,18 +15,32 @@
         photo = WebImage.GetImageFromRequest();
         if (photo != null)
         {
-            var userId = this.User.Identity.GetUserId();
-
-            if (userId != null)
-            {
-                //context.Users.FirstOrDefault(u => u.Id == userId).Pictures.Add();
-            }
-
             newFileName = Guid.NewGuid().ToString() + "_" +
                 Path.GetFileName(photo.FileName);
             imagePath = @"images\" + newFileName;
 
             photo.Save(@"~\" + imagePath);
+            var picture = new Picture
+            {
+                ImageURL = imagePath
+            };
+
+            var userId = this.User.Identity.GetUserId();
+
+            if (userId != null)
+            {
+                User user = context.Users.FirstOrDefault(u => u.Id == userId);
+                picture.Owner = user;
+                picture.OwnerId = user.Id;
+
+                context.Users.FirstOrDefault(u => u.Id == userId).Pictures.Add(picture);
+                context.SaveChanges();
+            }
+            else
+            {
+                context.Pictures.Add(picture);
+                context.SaveChanges();
+            }
         }
     }
 }
