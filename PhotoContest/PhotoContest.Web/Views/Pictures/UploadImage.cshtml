@@ -9,46 +9,7 @@
     var newFileName = "";
     var imagePath = "";
     var context = new PhotoDbContext();
-
-    if (IsPost)
-    {
-        photo = WebImage.GetImageFromRequest();
-        if (photo != null)
-        {
-            newFileName = Guid.NewGuid().ToString() + "_" +
-            Path.GetFileName(photo.FileName);
-            imagePath = @"images\" + newFileName;
-            var photos = new Stack<string>();
-
-            if (!photos.Contains(photo.FileName))
-            {
-                photo.Save(@"~\" + imagePath);
-                photos.Push(photo.FileName);
-            }
-
-            var picture = new Picture
-            {
-                ImageURL = imagePath
-            };
-
-            var userId = this.User.Identity.GetUserId();
-
-            if (userId != null)
-            {
-                User user = context.Users.FirstOrDefault(u => u.Id == userId);
-                picture.Owner = user;
-                picture.OwnerId = user.Id;
-
-                context.Users.FirstOrDefault(u => u.Id == userId).Pictures.Add(picture);
-                context.SaveChanges();
-            }
-            else
-            {
-                context.Pictures.Add(picture);
-                context.SaveChanges();
-            }
-        }
-    }
+    Control divController = new Control();
 }
 <!DOCTYPE html>
 <html>
@@ -66,11 +27,56 @@
         </fieldset>
     </form>
     <h1>Uploaded Image</h1>
-    @if (imagePath != "")
+
+    @if (IsPost)
     {
-        <div class="result">
-            <img src="~/Images/../@imagePath" />
-        </div>
+        photo = WebImage.GetImageFromRequest();
+        if (photo != null)
+        {
+            var photos = context.Pictures.Select(p => p.ImageURL).ToList();
+
+            newFileName = Path.GetFileName(photo.FileName);
+            imagePath = @"images\" + newFileName;
+
+            if (photo.FileName != null)
+            {
+                if (!photos.Contains(imagePath))
+                {
+                    photo.Save(@"~\" + imagePath);
+                    photos.Add(photo.FileName);
+
+                    var picture = new Picture
+                    {
+                        ImageURL = imagePath
+                    };
+
+                    var userId = this.User.Identity.GetUserId();
+
+                    <div class="result">
+                        <img src="~/Images/../@imagePath" />
+                    </div>
+
+                    if (userId != null)
+                    {
+                        User user = context.Users.FirstOrDefault(u => u.Id == userId);
+                        picture.Owner = user;
+                        picture.OwnerId = user.Id;
+
+                        context.Users.FirstOrDefault(u => u.Id == userId).Pictures.Add(picture);
+                        context.SaveChanges();
+                    }
+                    else
+                    {
+                        context.Pictures.Add(picture);
+                        context.SaveChanges();
+                    }
+                }
+                else
+                {
+                    <div id="duplicateUser">There is a image with this name!</div>
+                }
+            }
+        }
     }
 </body>
 </html>
