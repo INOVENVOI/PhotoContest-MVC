@@ -56,6 +56,7 @@ namespace PhotoContest.Data
 
             base.OnModelCreating(modelBuilder);
         }
+        
     }
 }
 

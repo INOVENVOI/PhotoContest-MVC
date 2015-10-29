@@ -22,12 +22,12 @@
             return View();
         }
         
-        public ActionResult GetAll()
-        {
-            var pictures = this.Data.Pictures.All()
-                .OrderBy(p => p.Votes.Count);
-            return View(pictures);
-        }
+        //public ActionResult GetAll()
+        //{
+        //    var pictures = this.Data.Pictures.All()
+        //        .OrderBy(p => p.Votes.Count);
+        //    return View(pictures);
+        //}
 
        
     }

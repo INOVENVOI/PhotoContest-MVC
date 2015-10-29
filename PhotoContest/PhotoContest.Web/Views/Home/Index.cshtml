@@ -1,26 +1,24 @@
-﻿@{
+﻿@*@model IEnumerable<PhotoContext.Models.Picture>*@
+@using PagedList.Mvc
+@model PagedList.PagedList<PhotoContest.Web.Models.ViewModels.PictureDetailsViewModel>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
-@model IEnumerable<PhotoContext.Models.Picture>
-
 <h2>Pictures in contests: @Model.Count()</h2>
-<div>
-    @{for (int i = 0; i < Model.Count(); i++)
-    {
-        if (i % 3 == 0)
-        {
-            @:<div class="row">
-        }
 
-        var picture = Model.Skip(i).FirstOrDefault();
-        <div class="col-md-4">
-            @*<h2>@Html.ActionLink(picture.Owner.FullName + "/ Votes:" + picture.Votes.Count, "Details", "Pictures", routeValues: new { id = picture.Id }, htmlAttributes: null)</h2>*@
-            <img src="@picture.ImageURL" alt="" />
-        </div>
-        if (i % 3 == 2)
-        {
-            @:</div>
-        }
-    }}
+<div class="col-md-12">
+    @foreach (var picture in Model)
+    {
+        @Html.Partial("_PicturePartial", picture)
+    }
+</div>
+
+
+<div class="col-md-9">
+    <div class="center-block">
+        @Html.PagedListPager(Model, page => Url.Action("Index", "Home", new { page, pageSize = Model.PageSize }))
+        Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalItemCount Photos
+    </div>
 </div>

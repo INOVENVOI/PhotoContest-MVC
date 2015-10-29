@@ -4,6 +4,8 @@ namespace PhotoContest.Web.Controllers
 {
     using System.Linq;
     using Data.UnitOfWork;
+    using Models.ViewModels;
+    using PagedList;
 
     public class HomeController : BaseController
     {
@@ -12,12 +14,18 @@ namespace PhotoContest.Web.Controllers
         {
         }
 
-        public ActionResult Index()
+        public ActionResult Index(int page = 1, int pageSize = 5)
         {
             var pictures = this.Data.Pictures.All()
-                .OrderBy(p => p.Votes.Count);
-            return View(pictures);
+                .OrderByDescending(p => p.Votes.Count)
+                .ThenBy(p => p.Id)
+                .Select(PictureDetailsViewModel.Create);
+
+            var pagedPictures = new PagedList<PictureDetailsViewModel>(pictures, page, pageSize);
+
+            return View(pagedPictures);
         }
+
 
         public ActionResult About()
         {

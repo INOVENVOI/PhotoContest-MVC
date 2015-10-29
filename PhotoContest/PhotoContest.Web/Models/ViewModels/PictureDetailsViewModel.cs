@@ -19,7 +19,7 @@ namespace PhotoContest.Web.Models.ViewModels
 
         public UserDetailsViewModel Author { get; set; }
 
-        public string[] Contests { get; set; }
+        public int ContestsCount { get; set; }
 
         public static Expression<Func<Picture, PictureDetailsViewModel>> Create
         {
@@ -37,7 +37,7 @@ namespace PhotoContest.Web.Models.ViewModels
                         Email = p.Owner.Email,
                         PicturesCount = p.Owner.Pictures.Count
                     },
-                    Contests = p.Contests.Select(c => c.Title).ToArray()
+                    ContestsCount = p.Contests.Count
                 };
             }
         }

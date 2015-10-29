@@ -282,6 +282,7 @@
     <Content Include="Views\Pictures\Index.cshtml" />
     <Content Include="Views\Pictures\UploadImage.cshtml" />
     <Content Include="Views\Pictures\Thumbnail.cshtml" />
+    <Content Include="Views\Shared\_PicturePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
