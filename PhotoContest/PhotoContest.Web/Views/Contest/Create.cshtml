@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Locked Out";
+}
+
+<div id="createContest">
+    @Html.BeginForm("Create", "Contest", FormMethod.Post)
+    {
+        <div class="modal-body">
+            <div class="row">
+                @*@Html.TextBoxFor(m => m.Title)
+                @Html.TextBoxFor(m => m.Description)
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @Html.TextBoxFor(m => m.OrganizerId)
+                }*@
+            </div>
+        </div>
+    }
+</div>

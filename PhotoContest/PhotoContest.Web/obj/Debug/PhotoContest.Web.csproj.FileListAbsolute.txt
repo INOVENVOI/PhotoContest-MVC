@@ -262,3 +262,7 @@ C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-M
 C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\PagedList.Mvc.dll
 C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\PagedList.xml
 C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\PagedList.Mvc.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\PagedList.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\PagedList.Mvc.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\PagedList.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\PagedList.Mvc.xml
