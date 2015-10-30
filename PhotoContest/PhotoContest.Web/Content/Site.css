@@ -26,3 +26,7 @@ textarea {
 img {
     max-width: 200px;
 }
+
+.large img {
+    max-width: 100%;
+}

@@ -6,12 +6,12 @@
     ViewBag.Title = "Home Page";
 }
 
-<h2>Pictures in contests: @Model.Count()</h2>
+<h2>All Photos in contests:</h2>
 
 <div class="col-md-12">
     @foreach (var picture in Model)
     {
-        @Html.Partial("~/Views/HomePage/_PicturePartial.cshtml", picture)
+        @Html.Partial("_PicturePartial", picture)
     }
 </div>
 

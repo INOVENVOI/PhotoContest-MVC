@@ -27,7 +27,7 @@
             <dd>
                 @Html.DisplayFor(model => picture.Author.Username)
             </dd>
-            <div>
+            <div class="large">
                 <img src="~/./Images/@picture.ImageURL" alt="image" />
             </div>
             
@@ -50,5 +50,5 @@
 </div>
 
 <p>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index", "Home")
 </p>

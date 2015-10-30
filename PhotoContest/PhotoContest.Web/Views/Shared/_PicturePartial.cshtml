@@ -1,0 +1,15 @@
+﻿@using PagedList.Mvc
+@using PhotoContest.Web.Helpers
+@model PhotoContest.Web.Models.ViewModels.PictureDetailsViewModel
+
+<div class="pic">
+    <h6 class="picheader">
+        <p>Author: <b class="name">@Model.Author.FullName</b></p>
+        <a href="@Url.Action("Profile", "Users", new {User = Model.Author.Username})" data-toggle="tooltip" data-placement="top" title="@Model.Author.FullName">@Model.Author.Username</a>
+
+    </h6>
+    <img src="~/./Images/@Model.ImageURL" alt="image" />
+    <a href="@Url.Action("Details", "Pictures", new {@Model.Id})">Details</a>
+    <p>Votes: <b class="name">@Model.VotesCount</b></p>
+    <br/>
+</div>
