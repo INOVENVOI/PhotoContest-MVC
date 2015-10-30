@@ -5,18 +5,21 @@ using System.Web;
 
 namespace PhotoContest.Web.Models.ViewModels
 {
+    using System.ComponentModel.DataAnnotations;
     using System.Linq.Expressions;
     using PagedList;
     using PhotoContext.Models;
 
     public class UserDetailsViewModel : IPagedList
     {
+        [Display(Name = "Full Name")]
         public string FullName { get; set; }
 
         public string Username { get; set; }
 
         public string Email { get; set; }
 
+        [Display(Name = "User's photos")]
         public int PicturesCount { get; set; }
 
         public static Expression<Func<User, UserDetailsViewModel>> Create

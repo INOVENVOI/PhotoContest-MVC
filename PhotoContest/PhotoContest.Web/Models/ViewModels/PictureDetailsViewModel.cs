@@ -5,6 +5,7 @@ using System.Web;
 
 namespace PhotoContest.Web.Models.ViewModels
 {
+    using System.ComponentModel.DataAnnotations;
     using System.Linq.Expressions;
     using PagedList;
     using PhotoContext.Models;
@@ -15,10 +16,12 @@ namespace PhotoContest.Web.Models.ViewModels
 
         public string ImageURL { get; set; }
 
+        [Display(Name = "Votes")]
         public int VotesCount { get; set; }
 
         public UserDetailsViewModel Author { get; set; }
 
+        [Display(Name = "Photo in contests")]
         public int ContestsCount { get; set; }
 
         public static Expression<Func<Picture, PictureDetailsViewModel>> Create

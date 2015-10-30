@@ -11,22 +11,24 @@
     var context = new PhotoDbContext();
     Control divController = new Control();
 }
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Image Upload</title>
-</head>
-<body>
+
+@{
+    ViewBag.Title = "Upload";
+}
+
+<h1>Upload</h1>
+
     <form action="" method="post" enctype="multipart/form-data">
         <fieldset>
-            <legend> Upload Image </legend>
-            <label for="Image">Image</label>
+            <legend>Photo</legend>
+            <label for="Photo">Photo</label>
             <input type="file" name="Image" />
             <br />
             <input type="submit" value="Upload" />
+            
         </fieldset>
     </form>
-    <h1>Uploaded Image</h1>
+    <h4>Uploaded Photo:</h4>
 
     @if (IsPost)
     {
@@ -78,6 +80,5 @@
             }
         }
     }
-</body>
-</html>
+
 

@@ -1,0 +1,47 @@
+﻿@using System.Linq
+@using Glimpse.Core.ClientScript
+@using PhotoContest.Web.Helpers
+@using PhotoContest.Data;
+@using Microsoft.AspNet.Identity;
+@using PhotoContext.Models
+@{
+    WebImage photo = null;
+    var newFileName = "";
+    var imagePath = "";
+   
+}
+
+@{
+    ViewBag.Title = "Upload";
+}
+
+<h1>Upload</h1>
+
+@using (Html.BeginForm("Upload", "Pictures", new { contestId = 1 }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <legend>Photo</legend>
+        <label for="Photo">Select Image:</label>
+        <input type="file" name="file" />&nbsp;&nbsp;&nbsp;
+        <input type="submit" value="Upload Image" name="Command" /><br />
+    </div>
+    <div>
+        @ViewBag.Message
+    </div>
+}
+
+<h4>Uploaded Photo:</h4>
+
+@if (IsPost)
+{
+    photo = WebImage.GetImageFromRequest();
+    if (photo != null)
+    {
+        newFileName = Path.GetFileName(photo.FileName);
+        imagePath = @"images\" + newFileName;
+
+        <div class="result">
+            <img src="~/Images/../@imagePath" />
+        </div>
+    }
+}

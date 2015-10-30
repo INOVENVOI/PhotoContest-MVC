@@ -1,7 +1,17 @@
-﻿namespace PhotoContest.Web.Controllers
+﻿using System.Web.Mvc;
+
+namespace PhotoContest.Web.Controllers
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Net;
+    using System.Web;
     using System.Web.Mvc;
     using Data.UnitOfWork;
+    using Microsoft.AspNet.Identity;
+    using Models.ViewModels;
+    using PagedList;
+    using PhotoContext.Models;
 
     public class PicturesController : BaseController
     {
@@ -21,14 +31,147 @@
         {
             return View();
         }
-        
-        //public ActionResult GetAll()
-        //{
-        //    var pictures = this.Data.Pictures.All()
-        //        .OrderBy(p => p.Votes.Count);
-        //    return View(pictures);
-        //}
 
+
+        // GET: Pictures/Details/5
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var picture = this.Data.Pictures.All()
+                .Where(p => p.Id == id)
+                .Select(PictureDetailsViewModel.Create);
+                
+
+            if (picture == null)
+            {
+                return HttpNotFound();
+            }
+            return View(picture);
+        }
+
+
+        // POST: Pictures/Vote/5
+        public ActionResult Vote(int id)
+        {
+            var picture = this.Data.Pictures.Find(id);
+            var currentUserId = this.User.Identity.GetUserId();
+            var vote = new Vote
+            {
+                VoterId = currentUserId,
+                PictureId = id,
+                ContestId = 1
+            };
+
+            picture.Votes.Add(vote);
+            this.Data.Votes.Add(vote);
+            this.Data.SaveChanges();
+            return RedirectToAction("Index", "Home");
+        }
+
+
+        
+        // GET: Tweets/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var picture = this.Data.Pictures.Remove(id);
+            if (picture == null)
+            {
+                return HttpNotFound();
+            }
+            return View(picture);
+        }
+
+        // POST: Pictures/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            var picture = this.Data.Pictures.Find(id);
+            this.Data.Pictures.Remove(picture);
+            this.Data.SaveChanges();
+            return RedirectToAction("Index", "Home");
+        }
+
+        
+        [HttpPost]
+        //[Route("Pictures/Upload/{contestId}")]
+        public ActionResult Upload(HttpPostedFileBase file, int contestId)
+        {
+            var currentUserId = this.User.Identity.GetUserId();
+            var contest = this.Data.Contests.All()
+               .FirstOrDefault(c => c.Id == contestId);
+
+            try
+            {
+                /*Geting the file name*/
+                string filename = System.IO.Path.GetFileName(file.FileName);
+
+                /*Saving the file in server folder*/
+                file.SaveAs(Server.MapPath("~/Images/" + filename));
+
+                /*Saving the fileURL in database*/
+                var picture = new Picture
+                {
+                    ImageURL = filename,
+                    OwnerId = currentUserId,
+                    Contests = new List<Contest>{contest}
+                };
+
+                this.Data.Pictures.Add(picture);
+                this.Data.SaveChanges();
+
+                ViewBag.Message = "File Uploaded successfully.";
+            }
+            catch
+            {
+                ViewBag.Message = "Error while uploading the files.";
+            }
+            return View();
+        }
+        
+        
+
+        public ActionResult GetByVote(int contestId, int page = 1, int pageSize = 10)
+        {
+            var contest = this.Data.Contests.All()
+                .FirstOrDefault(c => c.Id == contestId);
+            
+            var pictures = this.Data.Pictures.All()
+                .OrderByDescending(p => p.Votes.Count)
+                .ThenBy(p => p.Id)
+                .Where(p => p.Contests.Contains(contest))
+                .Select(PictureDetailsViewModel.Create);
+
+            var pagedPictures = new PagedList<PictureDetailsViewModel>(pictures, page, pageSize);
+
+            return View(pagedPictures);
+        }
+
+
+        public ActionResult GetByUploadDate(int contestId, int page = 1, int pageSize = 10)
+        {
+            var contest = this.Data.Contests.All()
+                .FirstOrDefault(c => c.Id == contestId);
+
+            var pictures = this.Data.Pictures.All()
+                .OrderByDescending(p => p.Id)
+                .Where(p => p.Contests.Contains(contest))
+                .Select(PictureDetailsViewModel.Create);
+
+            var pagedPictures = new PagedList<PictureDetailsViewModel>(pictures, page, pageSize);
+
+            return View(pagedPictures);
+        }
+
+
+        
        
     }
 }
