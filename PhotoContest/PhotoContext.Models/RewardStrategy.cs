@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PhotoContext.Models
+﻿namespace PhotoContext.Models
 {
+    using System.Collections.Generic;
+
     public class RewardStrategy
     {
         private ICollection<Prize> prizes;

@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace PhotoContest.Web.Models.ViewModels
+﻿namespace PhotoContest.Web.Models.ViewModels
 {
+    using System;
     using System.Linq.Expressions;
+    using PagedList;
     using PhotoContext.Models;
 
-    public class ContestDetailsViewModel
+    public class ContestDetailsViewModel : IPagedList
     {
         public int Id { get; set; }
 
@@ -56,5 +53,16 @@ namespace PhotoContest.Web.Models.ViewModels
                 };
             }
         }
+
+        public int PageCount { get; }
+        public int TotalItemCount { get; }
+        public int PageNumber { get; }
+        public int PageSize { get; }
+        public bool HasPreviousPage { get; }
+        public bool HasNextPage { get; }
+        public bool IsFirstPage { get; }
+        public bool IsLastPage { get; }
+        public int FirstItemOnPage { get; }
+        public int LastItemOnPage { get; }
     }
 }

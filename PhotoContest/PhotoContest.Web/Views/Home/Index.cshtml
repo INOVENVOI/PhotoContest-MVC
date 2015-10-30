@@ -11,10 +11,9 @@
 <div class="col-md-12">
     @foreach (var picture in Model)
     {
-        @Html.Partial("_PicturePartial", picture)
+        @Html.Partial("~/Views/HomePage/_PicturePartial.cshtml", picture)
     }
 </div>
-
 
 <div class="col-md-9">
     <div class="center-block">

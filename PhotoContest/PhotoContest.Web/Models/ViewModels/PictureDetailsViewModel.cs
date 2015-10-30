@@ -41,6 +41,7 @@ namespace PhotoContest.Web.Models.ViewModels
                 };
             }
         }
+
         public int PageCount { get; set; }
         public int TotalItemCount { get; set; }
         public int PageNumber { get; set; }
