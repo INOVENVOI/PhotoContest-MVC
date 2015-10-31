@@ -11,6 +11,7 @@ namespace PhotoContest.Web
     using System.Data.Entity;
     using Data;
     using System.Configuration;
+    using App_Start;
     using Data.Migrations;
 
     public class MvcApplication : System.Web.HttpApplication
@@ -20,6 +21,7 @@ namespace PhotoContest.Web
             //Database.SetInitializer(
             //    new MigrateDatabaseToLatestVersion<PhotoDbContext, PhotoContest.Data.Migrations.Configuration>());
 
+            MapperConfig.ConfigureMappings();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

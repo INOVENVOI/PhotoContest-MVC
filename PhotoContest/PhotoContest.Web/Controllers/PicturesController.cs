@@ -2,11 +2,13 @@
 
 namespace PhotoContest.Web.Controllers
 {
+    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
     using System.Net;
     using System.Web;
     using System.Web.Mvc;
+    using AutoMapper;
     using Data.UnitOfWork;
     using Microsoft.AspNet.Identity;
     using Models.ViewModels;
@@ -43,7 +45,11 @@ namespace PhotoContest.Web.Controllers
             var picture = this.Data.Pictures.All()
                 .Where(p => p.Id == id)
                 .Select(PictureDetailsViewModel.Create);
-                
+
+            //var picture = this.Data.Pictures.All()
+            //    .Where(p => p.Id == id);
+            //var picModels = Mapper.Map<IEnumerable<Picture>, IEnumerable<PictureDetailsViewModel>>(picture);   
+            //return View(picModels);
 
             if (picture == null)
             {

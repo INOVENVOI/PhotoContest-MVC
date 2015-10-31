@@ -1,4 +1,5 @@
-﻿@model IQueryable<PhotoContest.Web.Models.ViewModels.PictureDetailsViewModel>
+﻿@using PhotoContext.Models
+@model IQueryable<PhotoContest.Web.Models.ViewModels.PictureDetailsViewModel>
 
 @{
     ViewBag.Title = "Details";
@@ -30,18 +31,19 @@
             <div class="large">
                 <img src="~/./Images/@picture.ImageURL" alt="image" />
             </div>
-            
+
             <dt>
                 @Html.DisplayNameFor(model => picture.VotesCount)
             </dt>
             <dd>
                 @Html.DisplayFor(model => picture.VotesCount)
             </dd>
-            
+
             <div class="votebtns">
                 @using (Html.BeginForm("Vote", "Pictures", new { id = picture.Id }, FormMethod.Post))
                 {
                     @Html.HiddenFor(model => picture.VotesCount, new { Value = picture.VotesCount += 1 })
+                    <label>Vote for it: </label>
                     <input type="image" class="vote" src="@Url.Content("~/Content/Images/like.png")">
                 }
             </div>
