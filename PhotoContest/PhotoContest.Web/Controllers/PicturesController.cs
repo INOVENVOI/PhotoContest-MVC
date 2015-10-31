@@ -2,18 +2,25 @@
 
 namespace PhotoContest.Web.Controllers
 {
+    using System;
     using System.Collections;
     using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
     using System.Net;
     using System.Web;
     using System.Web.Mvc;
+    using AppLimit.CloudComputing.SharpBox;
+    using AppLimit.CloudComputing.SharpBox.StorageProvider.DropBox;
     using AutoMapper;
     using Data.UnitOfWork;
+    using Helpers;
     using Microsoft.AspNet.Identity;
+    using Models.BindingModels;
     using Models.ViewModels;
     using PagedList;
     using PhotoContext.Models;
+  
 
     public class PicturesController : BaseController
     {
@@ -177,7 +184,32 @@ namespace PhotoContest.Web.Controllers
         }
 
 
-        
+        [HttpPost]
+        [Authorize]
+        public ActionResult UploadFile(PhotoBindingModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                if (model.Upload != null)
+                {
+                    var paths = Helpers.UploadFiles.UploadImage(model.Upload, false);
+
+                    var photo = new Picture
+                    {
+                        ImageURL = DropBox.Download(paths[0]),
+                        Owner = this.UserProfile
+                    };
+
+                    this.UserProfile.Pictures.Add(photo);
+                    this.Data.SaveChanges();
+                    this.TempData["Success"] = new[] { "Edit successfull" };
+                }
+
+                return this.View();
+
+            }
+            return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "Invalid model");
+        }
        
     }
 }

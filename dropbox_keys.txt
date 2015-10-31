@@ -1,0 +1,6 @@
+App key:
+8l1y1xf5h1huvfq
+App secret:
+2oly8muryx1sfg9
+Access token:
+3dyV9SKAgpAAAAAAAAAAB82D75MxX6MMh7ls-wXluSWFEwfWG_seUWyG6SG7xsxV
