@@ -115,11 +115,11 @@ namespace PhotoContest.Web.Controllers
         
         [HttpPost]
         //[Route("Pictures/Upload/{contestId}")]
-        public ActionResult Upload(HttpPostedFileBase file, int contestId)
+        public ActionResult Upload(HttpPostedFileBase file)
         {
             var currentUserId = this.User.Identity.GetUserId();
-            var contest = this.Data.Contests.All()
-               .FirstOrDefault(c => c.Id == contestId);
+            //var contest = this.Data.Contests.All()
+            //   .FirstOrDefault(c => c.Id == contestId);
 
             try
             {
@@ -134,7 +134,7 @@ namespace PhotoContest.Web.Controllers
                 {
                     ImageURL = filename,
                     OwnerId = currentUserId,
-                    Contests = new List<Contest>{contest}
+                    //Contests = new List<Contest>{contest}
                 };
 
                 this.Data.Pictures.Add(picture);

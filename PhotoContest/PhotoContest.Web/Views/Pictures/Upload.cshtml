@@ -17,7 +17,7 @@
 
 <h1>Upload</h1>
 
-@using (Html.BeginForm("Upload", "Pictures", new { contestId = 1 }, FormMethod.Post, new { enctype = "multipart/form-data" }))
+@using (Html.BeginForm("Upload", "Pictures", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <div>
         <legend>Photo</legend>

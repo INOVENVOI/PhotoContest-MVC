@@ -12,6 +12,8 @@ namespace PhotoContest.Web.Models.ViewModels
 
     public class UserDetailsViewModel : IPagedList
     {
+        public string Id { get; set; }
+
         [Display(Name = "Full Name")]
         public string FullName { get; set; }
 
@@ -19,7 +21,7 @@ namespace PhotoContest.Web.Models.ViewModels
 
         public string Email { get; set; }
 
-        [Display(Name = "User's photos")]
+        [Display(Name = "Photos in contest")]
         public int PicturesCount { get; set; }
 
         public static Expression<Func<User, UserDetailsViewModel>> Create
@@ -28,6 +30,7 @@ namespace PhotoContest.Web.Models.ViewModels
             {
                 return u => new UserDetailsViewModel
                 {
+                    Id = u.Id,
                     FullName = u.FullName,
                     Username = u.UserName,
                     Email = u.Email,

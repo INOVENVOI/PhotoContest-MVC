@@ -1,0 +1,49 @@
+﻿@using PhotoContext.Models
+@model IQueryable<PhotoContest.Web.Models.ViewModels.UserDetailsViewModel>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>User</h2>
+
+<div>
+    <h4>Details</h4>
+    <hr />
+
+    <dl class="dl-horizontal">
+
+        @foreach (var user in Model)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => user.Username)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => user.Username)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => user.FullName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => user.FullName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => user.Email)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => user.Email)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => user.PicturesCount)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => user.PicturesCount)
+            </dd>
+        }
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "Index", "Users")
+</p>
+

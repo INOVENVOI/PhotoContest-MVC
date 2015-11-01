@@ -1,0 +1,34 @@
+﻿@using PagedList.Mvc
+@model PagedList.PagedList<PhotoContest.Web.Models.ViewModels.UserDetailsViewModel>
+
+@{
+    ViewBag.Title = "Users";
+}
+
+<h2>All Users in contests:</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Username:
+        </th>
+        <th>
+            Full Name:
+        </th>
+        <th></th>
+    </tr>
+    <div class="col-md-12">
+        @foreach (var user in Model)
+        {
+            @Html.Partial("_UserPartial", user)
+        }
+    </div>
+</table>
+
+<div class="col-md-9">
+    <div class="center-block">
+        @Html.PagedListPager(Model, page => Url.Action("Index", "Home", new { page, pageSize = Model.PageSize }))
+        Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalItemCount Users
+    </div>
+</div>
+

@@ -1,0 +1,17 @@
+﻿@using PagedList.Mvc
+@using PhotoContest.Web.Helpers
+@model PhotoContest.Web.Models.ViewModels.UserDetailsViewModel
+
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.Username)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.FullName)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { @Model.Id })
+        </td>
+    </tr>
+
+
