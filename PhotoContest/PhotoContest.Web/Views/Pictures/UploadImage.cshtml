@@ -49,7 +49,8 @@
 
                     var picture = new Picture
                     {
-                        ImageURL = newFileName
+                        ImageURL = newFileName,
+                        PostedOn = DateTime.Now
                     };
 
                     var userId = this.User.Identity.GetUserId();

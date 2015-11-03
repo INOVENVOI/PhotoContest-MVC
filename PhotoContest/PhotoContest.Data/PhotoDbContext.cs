@@ -22,10 +22,6 @@ namespace PhotoContest.Data
 
         public virtual DbSet<Prize> Prizes { get; set; }
 
-        public virtual DbSet<RewardStrategy> RewardStrategies { get; set; }
-
-        public virtual DbSet<DeadlineStrategy> DeadlineStrategies { get; set; }
-
 
         public static PhotoDbContext Create()
         {
@@ -35,24 +31,54 @@ namespace PhotoContest.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
-                .HasMany(u => u.Contests)
-                .WithMany()
+                .HasMany(u => u.Pictures)
+                .WithRequired(p => p.Owner)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.OrganizedContests)
+                .WithRequired(c => c.Organizer)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.ParticipatedContests)
+                .WithMany(c => c.Participants)
                 .Map(m =>
                 {
                     m.MapLeftKey("ParticipantId");
                     m.MapRightKey("ContestId");
-                    m.ToTable("ParticipantsContests");
+                    m.ToTable("ContestsParticipants");
                 });
 
+            modelBuilder.Entity<User>()
+                .HasMany(u => u.Votes)
+                .WithRequired(v => v.Voter)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Contest>()
+                .HasMany(c => c.Pictures)
+                .WithMany(p => p.Contests)
+                .Map(m =>
+                {
+                    m.MapLeftKey("ContestId");
+                    m.MapRightKey("PictureId");
+                    m.ToTable("ContestsPictures");
+                });
+
+            modelBuilder.Entity<Contest>()
+                .HasMany(c => c.Prizes)
+                .WithRequired(p => p.Contest)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Contest>()
+                .HasMany(c => c.Votes)
+                .WithRequired(v => v.Contest)
+                .WillCascadeOnDelete(false);
+
             modelBuilder.Entity<Picture>()
-               .HasMany(u => u.Contests)
-               .WithMany()
-               .Map(m =>
-               {
-                   m.MapLeftKey("PictureId");
-                   m.MapRightKey("ContestId");
-                   m.ToTable("PicturesContests");
-               });
+                .HasMany(p => p.Votes)
+                .WithRequired(v => v.Picture)
+                .WillCascadeOnDelete(false);
 
             base.OnModelCreating(modelBuilder);
         }

@@ -53,11 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contest.cs" />
+    <Compile Include="ContestsStatus.cs" />
     <Compile Include="DeadlineStrategy.cs" />
     <Compile Include="ParticipationStrategy.cs" />
     <Compile Include="Picture.cs" />
     <Compile Include="Prize.cs" />
-    <Compile Include="RewardStrategy.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vote.cs" />

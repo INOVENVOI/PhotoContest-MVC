@@ -1,7 +1,11 @@
 ﻿namespace PhotoContest.Web.Models.ViewModels
 {
     using System;
+    using System.Collections.Generic;
+    using System.Linq;
     using System.Linq.Expressions;
+    using AutoMapper;
+    using AutoMapper.QueryableExtensions;
     using PagedList;
     using PhotoContext.Models;
 
@@ -15,6 +19,10 @@
 
         public UserDetailsViewModel Organizier { get; set; }
 
+        public DateTime StartDate { get; set; }
+
+        public DateTime EndDate { get; set; }
+
         public int PicturesCount { get; set; }
 
         public int ParticipantsCount { get; set; }
@@ -23,7 +31,13 @@
 
         public ParticipationStrategy ParticipationStrategy { get; set; }
 
-        public DeadlineStrategyViewModel DeadlineStrategy { get; set; }
+        public DeadlineStrategy DeadlineStrategy { get; set; }
+
+        public ContestStatus ContestStatus { get; set; }
+
+        public IEnumerable<PrizeViewModel> Prizes { get; set; }
+
+        public IEnumerable<PictureSummaryViewModel> Pictures { get; set; }
 
         public static Expression<Func<Contest, ContestDetailsViewModel>> Create
         {
@@ -38,21 +52,28 @@
                     {
                         FullName = c.Organizer.FullName,
                         Username = c.Organizer.UserName,
-                        Email = c.Organizer.Email,
-                        PicturesCount = c.Organizer.Pictures.Count
+                        Email = c.Organizer.Email
                     },
+                    StartDate = c.StartDate,
+                    EndDate = c.EndDate,
                     PicturesCount = c.Pictures.Count,
                     ParticipantsCount = c.Participants.Count,
                     VotingStrategy = c.VotingStrategy,
                     ParticipationStrategy = c.ParticipationStrategy,
-                    DeadlineStrategy = new DeadlineStrategyViewModel
-                    {
-                        DeadlineByTime = c.DeadlineStrategy.DeadlineByTime,
-                        DeadlineByParticipantsNumber = c.DeadlineStrategy.DeadlineByParticipantsNumber
-                    }
+                    DeadlineStrategy = c.DeadlineStrategy,
+                    ContestStatus = c.ContestStatus
                 };
             }
         }
+
+        //public void CreateMappings(IConfiguration configuration)
+        //{
+        //    configuration.CreateMap<Contest, ContestDetailsViewModel>()
+        //        .ForMember(c => c.Organizier, cfg => cfg.MapFrom(c => c.Organizer.UserName))
+        //        .ForMember(c => c.PicturesCount, cfg => cfg.MapFrom(c => c.Pictures.Count))
+        //        .ForMember(c => c.Prizes, cfg => cfg.MapFrom(c => c.Prizes.AsQueryable().ProjectTo<PrizeViewModel>()))
+        //        .ForMember(c => c.ParticipantsCount, cfg => cfg.MapFrom(c => c.Participants.Count));
+        //}
 
         public int PageCount { get; set; }
         public int TotalItemCount { get; set; }

@@ -1,5 +1,6 @@
 ﻿namespace PhotoContext.Models
 {
+    using System;
     using System.Collections.Generic;
     using System.Security.Claims;
     using System.Threading.Tasks;
@@ -8,20 +9,28 @@
 
     public class User : IdentityUser
     {
-        private ICollection<Contest> contests;
+        private ICollection<Contest> organizedContests;
+        private ICollection<Contest> participatedContests;
         private ICollection<Picture> pictures;
         private ICollection<Vote> votes;
 
         public User()
         {
-            this.contests = new HashSet<Contest>();
+            this.organizedContests = new HashSet<Contest>();
+            this.participatedContests = new HashSet<Contest>();
             this.pictures = new HashSet<Picture>();
             this.votes = new HashSet<Vote>();
         }
 
         public string FullName { get; set; }
 
-        public virtual ICollection<Contest> Contests { get; set; }
+        public string ProfilePicture { get; set; }
+
+        public DateTime? BirthDate { get; set; }
+
+        public virtual ICollection<Contest> OrganizedContests { get; set; }
+
+        public virtual ICollection<Contest> ParticipatedContests { get; set; }
 
         public virtual ICollection<Picture> Pictures { get; set; }
 

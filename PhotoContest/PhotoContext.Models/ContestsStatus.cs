@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace PhotoContext.Models
 {
-    public enum DeadlineStrategy
+    public enum ContestStatus
     {
-        EndDate,
-        ParticipatantsLimit
+        Active,
+        Dismissed,
+        Finished
     }
 }

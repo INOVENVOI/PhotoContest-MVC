@@ -1,5 +1,6 @@
 ﻿namespace PhotoContext.Models
 {
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
@@ -7,13 +8,18 @@
     {
         private ICollection<Picture> pictures;
         private ICollection<User> participants;
+        private ICollection<Vote> votes;
+        private IList<Prize> prizes;
 
         public Contest()
         {
             this.pictures = new HashSet<Picture>();
             this.participants = new HashSet<User>();
+            this.votes = new HashSet<Vote>();
+            this.prizes = new List<Prize>();
         }
 
+        [Key]
         public int Id { get; set; }
 
         [Required]
@@ -21,11 +27,21 @@
 
         public string Description { get; set; }
 
+        [Required]
         public string OrganizerId { get; set; }
 
-        public virtual User Organizer { get; set; } // Organizer
+        public virtual User Organizer { get; set; }
 
-        public virtual RewardStrategy RewardStrategy { get; set; }
+        [Required]
+        public DateTime StartDate { get; set; }
+
+        [Required]
+        public DateTime EndDate { get; set; }
+
+        public int? ParticipantsLimit { get; set; }
+
+        [Required]
+        public ContestStatus ContestStatus { get; set; }
 
         public virtual VotingStrategy VotingStrategy { get; set; }
 
@@ -33,8 +49,12 @@
 
         public virtual DeadlineStrategy DeadlineStrategy { get; set; }
 
-        public virtual ICollection<User> Participants { get; set; } // Users is Contest
+        public virtual ICollection<User> Participants { get; set; }
 
         public virtual ICollection<Picture> Pictures { get; set; }
+
+        public virtual ICollection<Vote> Votes { get; set; }
+
+        public virtual IList<Prize> Prizes { get; set; }
     }
 }

@@ -7,6 +7,7 @@ namespace PhotoContest.Web.Models.ViewModels
 {
     using System.ComponentModel.DataAnnotations;
     using System.Linq.Expressions;
+    using AutoMapper;
     using PagedList;
     using PhotoContext.Models;
 
@@ -24,6 +25,12 @@ namespace PhotoContest.Web.Models.ViewModels
         [Display(Name = "Photos in contest")]
         public int PicturesCount { get; set; }
 
+        [Display(Name = "Organized contests")]
+        public int OrganizedContestsCount { get; set; }
+
+        [Display(Name = "Participated contests")]
+        public int ParticipatedContestsCount { get; set; }
+
         public static Expression<Func<User, UserDetailsViewModel>> Create
         {
             get
@@ -34,10 +41,20 @@ namespace PhotoContest.Web.Models.ViewModels
                     FullName = u.FullName,
                     Username = u.UserName,
                     Email = u.Email,
-                    PicturesCount = u.Pictures.Count
+                    PicturesCount = u.Pictures.Count,
+                    OrganizedContestsCount = u.OrganizedContests.Count,
+                    ParticipatedContestsCount = u.ParticipatedContests.Count
                 };
             }
         }
+
+        //public void CreateMappings(IConfiguration configuration)
+        //{
+        //    configuration.CreateMap<User, UserDetailsViewModel>()
+        //        .ForMember(p => p.PicturesCount, cfg => cfg.MapFrom(p => p.Pictures.Count))
+        //        .ForMember(p => p.OrganizedContestsCount, cfg => cfg.MapFrom(p => p.OrganizedContests.Count))
+        //        .ForMember(p => p.ParticipatedContestsCount, cfg => cfg.MapFrom(p => p.ParticipatedContests.Count));
+        //}
 
         public int PageCount { get; set; }
         public int TotalItemCount { get; set; }

@@ -72,22 +72,7 @@ namespace PhotoContest.Data.UnitOfWork
             }
         }
 
-        public IRepository<RewardStrategy> RewardStrategies
-        {
-            get
-            {
-                return this.GetRepository<RewardStrategy>();
-            }
-        }
-
-        public IRepository<DeadlineStrategy> DeadlineStrategies
-        {
-            get
-            {
-                return this.GetRepository<DeadlineStrategy>();
-            }
-        }
-
+        
         public IUserStore<User> UserStore
         {
             get
