@@ -88,3 +88,32 @@ C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoCo
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContest.Data.dll.config
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContest.Data.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContest.Data.pdb
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\EntityFramework.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Owin.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContext.Models.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\PhotoContext.Models.pdb
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\EntityFramework.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\obj\Debug\PhotoContest.Data.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\obj\Debug\PhotoContest.Data.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Data\obj\Debug\PhotoContest.Data.pdb

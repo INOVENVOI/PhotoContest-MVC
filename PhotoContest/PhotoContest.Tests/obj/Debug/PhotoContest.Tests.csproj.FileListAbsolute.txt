@@ -28,3 +28,18 @@ C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoCo
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.dll
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.pdb
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContest.Tests.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContest.Tests.pdb
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContest.Data.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContext.Models.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContest.Data.pdb
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\PhotoContext.Models.pdb
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\EntityFramework.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.dll
+C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Tests\obj\Debug\PhotoContest.Tests.pdb
