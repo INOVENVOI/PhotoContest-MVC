@@ -18,13 +18,13 @@ namespace PhotoContest.Web.App_Start
                 .ForMember(model => model.Author, config => config.MapFrom(photo => photo.Owner.UserName));
 
             Mapper.CreateMap<Contest, ContestDetailsViewModel>()
-                .ForMember(c => c.Organizier, cfg => cfg.MapFrom(c => c.Organizer.UserName))
+                .ForMember(c => c.Organizer, cfg => cfg.MapFrom(c => c.Organizer.UserName))
                 .ForMember(c => c.PicturesCount, cfg => cfg.MapFrom(c => c.Pictures.Count))
                 .ForMember(c => c.Prizes, cfg => cfg.MapFrom(c => c.Prizes.AsQueryable().ProjectTo<PrizeViewModel>()))
                 .ForMember(c => c.ParticipantsCount, cfg => cfg.MapFrom(c => c.Participants.Count));
 
             Mapper.CreateMap<Contest, ContestSummaryViewModel>()
-                .ForMember(c => c.Organizier, cfg => cfg.MapFrom(c => c.Organizer.UserName));
+                .ForMember(c => c.Organizer, cfg => cfg.MapFrom(c => c.Organizer.UserName));
 
             Mapper.CreateMap<Picture, PictureDetailsViewModel>()
                 .ForMember(p => p.Author, cfg => cfg.MapFrom(p => p.Owner.UserName))

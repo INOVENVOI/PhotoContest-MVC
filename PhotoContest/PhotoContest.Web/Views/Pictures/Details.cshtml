@@ -15,29 +15,42 @@
 
         @foreach (var picture in Model)
         {
-            <h5>Author:</h5>
+            <h5>Picture's details:</h5>
             <dt>
-                @Html.DisplayNameFor(model => picture.Author.FullName)
+                @Html.DisplayNameFor(model => picture.Title)
             </dt>
             <dd>
-                @Html.DisplayFor(model => picture.Author.FullName)
+                @Html.DisplayFor(model => picture.Title)
             </dd>
             <dt>
-                @Html.DisplayNameFor(model => picture.Author.Username)
+                @Html.DisplayNameFor(model => picture.PostedOn)
             </dt>
             <dd>
-                @Html.DisplayFor(model => picture.Author.Username)
+                @Html.DisplayFor(model => picture.PostedOn)
             </dd>
-            <div class="large">
-                <img src="~/./Images/@picture.ImageURL" alt="image" />
-            </div>
-
             <dt>
                 @Html.DisplayNameFor(model => picture.VotesCount)
             </dt>
             <dd>
                 @Html.DisplayFor(model => picture.VotesCount)
             </dd>
+
+            <h5>Author:</h5>
+            <dt>
+                @Html.DisplayNameFor(model => picture.Author.Username)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => picture.Author.Username)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => picture.Author.FullName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => picture.Author.FullName)
+            </dd>
+            <div class="large">
+                <img src="~/./Images/@picture.ImageURL" alt="image" />
+            </div>
 
             <div class="votebtns">
                 @using (Html.BeginForm("Vote", "Pictures", new { id = picture.Id }, FormMethod.Post))

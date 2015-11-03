@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     using System.Linq;
     using System.Linq.Expressions;
     using AutoMapper;
@@ -17,14 +18,18 @@
 
         public string Description { get; set; }
 
-        public UserDetailsViewModel Organizier { get; set; }
+        public UserDetailsViewModel Organizer { get; set; }
+
+        public UserDetailsViewModel Winner { get; set; }
 
         public DateTime StartDate { get; set; }
 
         public DateTime EndDate { get; set; }
 
+        [Display(Name = "Pictures in contest")]
         public int PicturesCount { get; set; }
 
+        [Display(Name = "Participants in contest")]
         public int ParticipantsCount { get; set; }
 
         public VotingStrategy VotingStrategy { get; set; }
@@ -48,11 +53,17 @@
                     Id = c.Id,
                     Title = c.Title,
                     Description = c.Description,
-                    Organizier = new UserDetailsViewModel
+                    Organizer = new UserDetailsViewModel
                     {
                         FullName = c.Organizer.FullName,
                         Username = c.Organizer.UserName,
                         Email = c.Organizer.Email
+                    },
+                    Winner = new UserDetailsViewModel
+                    {
+                        FullName = c.Winner.FullName,
+                        Username = c.Winner.UserName,
+                        Email = c.Winner.Email
                     },
                     StartDate = c.StartDate,
                     EndDate = c.EndDate,

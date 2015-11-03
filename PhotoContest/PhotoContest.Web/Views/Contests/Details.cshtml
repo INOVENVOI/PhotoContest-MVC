@@ -1,0 +1,83 @@
+﻿@using PhotoContext.Models
+@model IQueryable<PhotoContest.Web.Models.ViewModels.ContestDetailsViewModel>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Contest</h2>
+
+<div>
+    <h4>Details</h4>
+    <hr />
+
+    <dl class="dl-horizontal">
+
+        @foreach (var contest in Model)
+        {
+            <h5>Contest's details:</h5>
+            <dt>
+                @Html.DisplayNameFor(model => contest.Title)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => contest.Title)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => contest.Description)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => contest.Description)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => contest.StartDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => contest.StartDate)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => contest.EndDate)
+            </dt>
+                    <dd>
+                        @Html.DisplayFor(model => contest.EndDate)
+                    </dd>
+            <dt>
+                @Html.DisplayNameFor(model => contest.PicturesCount)
+            </dt>
+                    <dd>
+                        @Html.DisplayFor(model => contest.PicturesCount)
+                    </dd>
+            <dt>
+                @Html.DisplayNameFor(model => contest.ParticipantsCount)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => contest.ParticipantsCount)
+            </dd>
+
+            <h5>Organizer:</h5>
+            <dt>
+                @Html.DisplayNameFor(model => contest.Organizer.Username)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => contest.Organizer.Username)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => contest.Organizer.FullName)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => contest.Organizer.FullName)
+            </dd>
+
+            <h5>Winner:</h5>
+            <dt>
+                @Html.DisplayNameFor(model => contest.Winner.Username)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => contest.Winner.Username)
+            </dd>
+        }
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "Index", "Home")
+</p>

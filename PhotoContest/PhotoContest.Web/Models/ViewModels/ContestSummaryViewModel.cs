@@ -17,7 +17,9 @@ namespace PhotoContest.Web.Models.ViewModels
 
         public string Title { get; set; }
 
-        public UserSummaryViewModel Organizier { get; set; }
+        public UserSummaryViewModel Organizer { get; set; }
+
+        public UserDetailsViewModel Winner { get; set; }
 
         public ContestStatus ContestStatus { get; set; }
 
@@ -30,11 +32,16 @@ namespace PhotoContest.Web.Models.ViewModels
                 {
                     Id = c.Id,
                     Title = c.Title,
-                    Organizier = new UserSummaryViewModel
+                    Organizer = new UserSummaryViewModel
                     {
                         FullName = c.Organizer.FullName,
                         Username = c.Organizer.UserName
                         
+                    },
+                    Winner = new UserDetailsViewModel
+                    {
+                        FullName = c.Winner.FullName,
+                        Username = c.Winner.UserName
                     },
                     ContestStatus = c.ContestStatus
                 };
