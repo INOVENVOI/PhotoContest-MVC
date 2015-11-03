@@ -88,12 +88,14 @@ namespace PhotoContest.Web.Controllers
             {
                 VoterId = currentUserId,
                 PictureId = id,
-                ContestId = 1
+                ContestId = 2
             };
-
-            picture.Votes.Add(vote);
             this.Data.Votes.Add(vote);
             this.Data.SaveChanges();
+
+            picture.Votes.Add(vote);
+            this.Data.SaveChanges();
+
             return RedirectToAction("Index", "Home");
         }
 

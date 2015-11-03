@@ -17,7 +17,7 @@
 
         public virtual Picture Picture { get; set; }
 
-        [Required]
+        //[Required]
         public int ContestId { get; set; }
 
         public virtual Contest Contest { get; set; }

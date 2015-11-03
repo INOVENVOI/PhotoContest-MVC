@@ -11,7 +11,7 @@
 <div class="col-md-12">
     @foreach (var contest in Model)
     {
-        <a href="@Url.Action("Details", "Contests", new {Contests = contest.Id})" data-toggle="tooltip" data-placement="top" title="@contest.ContestStatus">@contest.Title</a>
+        <a href="@Url.Action("Details", "Contests", new {id = contest.Id})" data-toggle="tooltip" data-placement="top" title="@contest.ContestStatus">@contest.Title</a>
         <p>Organizer: <b class="name">@contest.Organizer.Username</b></p>
         <p>Winner: <b class="name">@contest.Winner.Username</b></p>
     }

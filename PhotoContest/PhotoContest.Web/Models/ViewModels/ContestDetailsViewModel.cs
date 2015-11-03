@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     using System.Linq;
     using System.Linq.Expressions;
     using AutoMapper;
@@ -25,8 +26,10 @@
 
         public DateTime EndDate { get; set; }
 
+        [Display(Name = "Pictures in contest")]
         public int PicturesCount { get; set; }
 
+        [Display(Name = "Participants in contest")]
         public int ParticipantsCount { get; set; }
 
         public VotingStrategy VotingStrategy { get; set; }
