@@ -17,7 +17,9 @@
 
         public string Description { get; set; }
 
-        public UserDetailsViewModel Organizier { get; set; }
+        public UserDetailsViewModel Organizer { get; set; }
+
+        public UserDetailsViewModel Winner { get; set; }
 
         public DateTime StartDate { get; set; }
 
@@ -48,11 +50,17 @@
                     Id = c.Id,
                     Title = c.Title,
                     Description = c.Description,
-                    Organizier = new UserDetailsViewModel
+                    Organizer = new UserDetailsViewModel
                     {
                         FullName = c.Organizer.FullName,
                         Username = c.Organizer.UserName,
                         Email = c.Organizer.Email
+                    },
+                    Winner = new UserDetailsViewModel
+                    {
+                        FullName = c.Winner.FullName,
+                        Username = c.Winner.UserName,
+                        Email = c.Winner.Email
                     },
                     StartDate = c.StartDate,
                     EndDate = c.EndDate,

@@ -27,10 +27,14 @@
 
         public string Description { get; set; }
 
-        [Required]
+        //[Required]
         public string OrganizerId { get; set; }
 
         public virtual User Organizer { get; set; }
+
+        public string WinnerId { get; set; }
+
+        public virtual User Winner { get; set; }
 
         [Required]
         public DateTime StartDate { get; set; }

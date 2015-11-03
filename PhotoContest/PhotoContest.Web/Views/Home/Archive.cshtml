@@ -3,28 +3,29 @@
 @model PagedList.PagedList<PhotoContest.Web.Models.ViewModels.ContestSummaryViewModel>
 
 @{
-    ViewBag.Title = "Home";
+    ViewBag.Title = "Archive";
 }
 
-<h1>Welcome to Photo Contest!</h1>
-<h2>Active contests:</h2>
+<h2>Finished contests:</h2>
 
 <div class="col-md-12">
     @foreach (var contest in Model)
     {
         <a href="@Url.Action("Details", "Contests", new {Contests = contest.Id})" data-toggle="tooltip" data-placement="top" title="@contest.ContestStatus">@contest.Title</a>
         <p>Organizer: <b class="name">@contest.Organizer.Username</b></p>
+        <p>Winner: <b class="name">@contest.Winner.Username</b></p>
     }
 </div>
 <br/>
 
 <div>
-    @Html.ActionLink("Archive", "Archive", "Home")
+    @Html.ActionLink("Back to Home Page", "Index", "Home")
 </div>
 
 <div class="col-md-9">
     <div class="center-block">
-        @Html.PagedListPager(Model, page => Url.Action("Index", "Home", new { page, pageSize = Model.PageSize }))
+        @Html.PagedListPager(Model, page => Url.Action("Archive", "Home", new { page, pageSize = Model.PageSize }))
         Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalItemCount Contests
     </div>
 </div>
+

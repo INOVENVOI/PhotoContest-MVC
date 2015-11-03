@@ -27,6 +27,7 @@ namespace PhotoContest.Data.Migrations
                 roleManager.Create(new IdentityRole { Name = "Administrator" });
             }
 
+            
             // if user doesn't exist, create one and add it to the Administrator role
             if (!context.Users.Any(u => u.UserName == "admin"))
             {
@@ -45,7 +46,8 @@ namespace PhotoContest.Data.Migrations
                 var guster = new User
                 {
                     FullName = "Guster Comodski",
-                    ProfilePicture = "http://orig08.deviantart.net/ec2f/f/2011/334/f/0/profile_picture_by_kyo_tux-d4hrimy.png",
+                    ProfilePicture =
+                        "http://orig08.deviantart.net/ec2f/f/2011/334/f/0/profile_picture_by_kyo_tux-d4hrimy.png",
                     BirthDate = new DateTime(1990, 10, 20),
                     Email = "guster@gmail.com",
                     UserName = "Gustera"
@@ -68,6 +70,7 @@ namespace PhotoContest.Data.Migrations
                 {
                     Title = "Nature",
                     Description = "Photos of nature, animals and natural phenomenom",
+                    OrganizerId = minka.Id,
                     Organizer = minka,
                     StartDate = DateTime.Now,
                     EndDate = DateTime.Now.AddDays(30),
@@ -82,6 +85,7 @@ namespace PhotoContest.Data.Migrations
                 {
                     Title = "Humans",
                     Description = "Portrait and human body photography",
+                    OrganizerId = guster.Id,
                     Organizer = guster,
                     StartDate = DateTime.Now,
                     EndDate = DateTime.Now.AddDays(10),
@@ -104,7 +108,6 @@ namespace PhotoContest.Data.Migrations
                 minka.ParticipatedContests.Add(natureContest);
 
                 context.SaveChanges();
-
             }
         }
     }

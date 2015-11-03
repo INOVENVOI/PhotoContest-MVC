@@ -28,7 +28,20 @@ namespace PhotoContest.Web.Controllers
             : base(data)
         {
         }
-        
+
+
+        public ActionResult Index(int page = 1, int pageSize = 5)
+        {
+            var pictures = this.Data.Pictures.All()
+                .OrderByDescending(p => p.Votes.Count)
+                .ThenBy(p => p.Id)
+                .Select(PictureDetailsViewModel.Create);
+
+            var pagedPictures = new PagedList<PictureDetailsViewModel>(pictures, page, pageSize);
+
+            return View(pagedPictures);
+        }
+
 
         public ActionResult UploadImage()
         {

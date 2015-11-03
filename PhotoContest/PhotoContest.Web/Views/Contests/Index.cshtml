@@ -1,0 +1,35 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model PagedList.PagedList<PhotoContest.Web.Models.ViewModels.ContestDetailsViewModel>
+
+@{
+    ViewBag.Title = "Contests";
+}
+
+<h2>All contests:</h2>
+
+<div class="col-md-12">
+    @foreach (var contest in Model)
+    {
+        <a href="@Url.Action("Details", "Contests", new {Contests = contest.Id})" data-toggle="tooltip" data-placement="top" title="@contest.ContestStatus">@contest.Title</a>
+        <p>Description: <b class="name">@contest.Description</b></p>
+        <p>Organizer: <b class="name">@contest.Organizer.Username</b></p>
+        <p>Status: <b class="name">@contest.ContestStatus.ToString()</b></p>
+        <p>Participants: <b class="name">@contest.PicturesCount</b></p>
+        <p>Photos in contest: <b class="name">@contest.PicturesCount</b></p>
+        <br />
+    }
+</div>
+<br />
+
+<div>
+    @Html.ActionLink("Back to Home Page", "Index", "Home")
+</div>
+
+<div class="col-md-9">
+    <div class="center-block">
+        @Html.PagedListPager(Model, page => Url.Action("Index", "Contests", new { page, pageSize = Model.PageSize }))
+        Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalItemCount Contests
+    </div>
+</div>
+
