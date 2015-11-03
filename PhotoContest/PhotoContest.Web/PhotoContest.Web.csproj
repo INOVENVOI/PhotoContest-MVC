@@ -254,9 +254,12 @@
     <Compile Include="Models\BindingModels\PhotoBindingModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\ViewModels\ContestDetailsViewModel.cs" />
-    <Compile Include="Models\ViewModels\DeadlineStrategyViewModel.cs" />
+    <Compile Include="Models\ViewModels\ContestSummaryViewModel.cs" />
     <Compile Include="Models\ViewModels\PictureDetailsViewModel.cs" />
+    <Compile Include="Models\ViewModels\PictureSummaryViewModel.cs" />
+    <Compile Include="Models\ViewModels\PrizeViewModel.cs" />
     <Compile Include="Models\ViewModels\UserDetailsViewModel.cs" />
+    <Compile Include="Models\ViewModels\UserSummaryViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>

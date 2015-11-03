@@ -11,7 +11,7 @@ namespace PhotoContest.Web.Models.ViewModels
     using PagedList;
     using PhotoContext.Models;
 
-    public class PictureDetailsViewModel : IPagedList
+    public class PictureSummaryViewModel : IPagedList
     {
         public int Id { get; set; }
 
@@ -24,16 +24,11 @@ namespace PhotoContest.Web.Models.ViewModels
 
         public UserDetailsViewModel Author { get; set; }
 
-        public DateTime PostedOn { get; set; }
-
-        [Display(Name = "Photo in contests")]
-        public int ContestsCount { get; set; }
-
-        public static Expression<Func<Picture, PictureDetailsViewModel>> Create
+        public static Expression<Func<Picture, PictureSummaryViewModel>> Create
         {
             get
             {
-                return p => new PictureDetailsViewModel
+                return p => new PictureSummaryViewModel
                 {
                     Id = p.Id,
                     Title = p.Title,
@@ -45,18 +40,15 @@ namespace PhotoContest.Web.Models.ViewModels
                         Username = p.Owner.UserName,
                         Email = p.Owner.Email,
                         PicturesCount = p.Owner.Pictures.Count
-                    },
-                    PostedOn = p.PostedOn,
-                    ContestsCount = p.Contests.Count
+                    }
                 };
             }
         }
 
         //public void CreateMappings(IConfiguration configuration)
         //{
-        //    configuration.CreateMap<Picture, PictureDetailsViewModel>()
+        //    configuration.CreateMap<Picture, PictureSummaryViewModel>()
         //        .ForMember(p => p.Author, cfg => cfg.MapFrom(p => p.Owner.UserName))
-        //        .ForMember(p => p.ContestsCount, cfg => cfg.MapFrom(p => p.Contests.Count))
         //        .ForMember(p => p.VotesCount, cfg => cfg.MapFrom(p => p.Votes.Count));
         //}
 

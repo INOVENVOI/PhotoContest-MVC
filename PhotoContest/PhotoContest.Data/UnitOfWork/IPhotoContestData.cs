@@ -21,10 +21,6 @@ namespace PhotoContest.Data.UnitOfWork
 
         IRepository<Prize> Prizes { get; }
 
-        IRepository<RewardStrategy> RewardStrategies { get; }
-
-        IRepository<DeadlineStrategy> DeadlineStrategies { get; }
-
         void SaveChanges();
     }
 }
