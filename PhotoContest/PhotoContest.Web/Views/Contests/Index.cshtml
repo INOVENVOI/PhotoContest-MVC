@@ -11,13 +11,7 @@
 <div class="col-md-12">
     @foreach (var contest in Model)
     {
-        <a href="@Url.Action("Details", "Contests", new {id = contest.Id})" data-toggle="tooltip" data-placement="top" title="@contest.ContestStatus">@contest.Title</a>
-        <p>Description: <b class="name">@contest.Description</b></p>
-        <p>Organizer: <b class="name">@contest.Organizer.Username</b></p>
-        <p>Status: <b class="name">@contest.ContestStatus.ToString()</b></p>
-        <p>Participants: <b class="name">@contest.PicturesCount</b></p>
-        <p>Photos in contest: <b class="name">@contest.PicturesCount</b></p>
-        <br />
+        @Html.Partial("~/Views/Contests/_AllContests.cshtml", contest);
     }
 </div>
 <br />
@@ -33,3 +27,6 @@
     </div>
 </div>
 
+<aside id="create-Contest">
+    @Html.Action("Create", "Contests");
+</aside>

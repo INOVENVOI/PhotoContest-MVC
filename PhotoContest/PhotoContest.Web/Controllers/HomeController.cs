@@ -1,11 +1,7 @@
 ﻿namespace PhotoContest.Web.Controllers
 {
-    using System;
-    using System.Collections.Generic;
     using System.Linq;
     using System.Web.Mvc;
-    using AutoMapper;
-    using AutoMapper.QueryableExtensions;
     using Data.UnitOfWork;
     using Models.ViewModels;
     using PagedList;

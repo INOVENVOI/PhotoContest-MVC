@@ -1,0 +1,40 @@
+﻿@using System.Web.Mvc.Html
+@using Glimpse.Mvc.Message
+@using Microsoft.AspNet.Identity
+@model PhotoContext.Models.Contest
+
+@if (this.User.Identity.GetUserId() == null)
+{
+    <h1 id="create-ContestTag">Pleace log on to create contest</h1>
+}
+else
+{
+    <h1>Create contest:</h1>
+    using (Html.BeginForm("Submit", "Contests", FormMethod.Post))
+    {
+        <div id="firstParams">
+            @Html.Label("Title:")
+            @Html.TextBoxFor(m => m.Title)
+            @Html.Label("Description:")
+            @Html.TextBoxFor(m => m.Description)
+            @Html.Label("StartDate")
+            @Html.TextBoxFor(m => m.StartDate, new { type = "time" })
+            @Html.Label("EndDate:")
+            @Html.TextBoxFor(m => m.EndDate, new { type = "time" })
+            @Html.Label("ParticipantsLimit:")
+            @Html.TextBoxFor(m => m.ParticipantsLimit)
+        </div>
+        <div id="secondParams">
+            @Html.Label("ContestStatusState:")
+            @Html.EnumDropDownListFor(m => m.ContestStatus)
+            @Html.Label("VotingStrategy:")
+            @Html.EnumDropDownListFor(m => m.VotingStrategy)
+            @Html.Label("ParticipationStrategy:")
+            @Html.EnumDropDownListFor(m => m.ParticipationStrategy)
+            @Html.Label("DeadlineStrategy:")
+            @Html.EnumDropDownListFor(m => m.DeadlineStrategy)
+            <input type="submit" value="Submit contest" id="submitButton">
+        </div>
+    }
+}
+

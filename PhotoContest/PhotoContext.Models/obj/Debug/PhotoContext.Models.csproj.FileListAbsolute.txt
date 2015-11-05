@@ -68,3 +68,16 @@ C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoC
 C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.csprojResolveAssemblyReference.cache
 C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.dll
 C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.pdb
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Helpers.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Mvc.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Razor.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Helpers.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Mvc.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Razor.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Razor.xml

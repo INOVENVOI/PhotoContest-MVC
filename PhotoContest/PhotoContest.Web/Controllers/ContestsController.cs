@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-namespace PhotoContest.Web.Controllers
+﻿namespace PhotoContest.Web.Controllers
 {
+    using System.Linq;
     using System.Net;
+    using System.Web.Mvc;
     using Data.UnitOfWork;
+    using Microsoft.AspNet.Identity;
     using Models.ViewModels;
     using PagedList;
     using PhotoContext.Models;
@@ -50,7 +47,27 @@ namespace PhotoContest.Web.Controllers
             {
                 return HttpNotFound();
             }
+
             return View(contest);
+        }
+
+        public ActionResult Submit(Contest contest)
+        {
+            User user = Data.Users.Find(this.User.Identity.GetUserId());
+
+            contest.OrganizerId = user.Id;
+            contest.Organizer = user;
+
+            user.OrganizedContests.Add(contest);
+            Data.Contests.Add(contest);
+            Data.SaveChanges();
+
+            return Redirect("/Contests");
+        }
+
+        public ActionResult Create()
+        {
+            return PartialView("~/Views/Contests/_CreateContest.cshtml");
         }
     }
 }

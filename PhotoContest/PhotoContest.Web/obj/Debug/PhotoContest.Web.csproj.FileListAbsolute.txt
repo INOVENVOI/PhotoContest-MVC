@@ -365,3 +365,15 @@ C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoC
 C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Web\obj\Debug\PhotoContest.Web.csproj.GenerateResource.Cache
 C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Web\obj\Debug\PhotoContest.Web.dll
 C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\PhotoContest-MVC\PhotoContest\PhotoContest.Web\obj\Debug\PhotoContest.Web.pdb
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\AppLimit.CloudComputing.SharpBox.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\AppLimit.CloudComputing.SharpBox.ExperimentalProvider.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\AppLimit.CloudComputing.SharpBox.MockProvider.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\AutoMapper.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\DropBoxTokenIssuer.exe
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\DropNet.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\Newtonsoft.Json.Net40.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\RestSharp.dll
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\AutoMapper.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\bin\RestSharp.xml
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\obj\Debug\PhotoContest.Web.AppKeys.resources
+C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContest.Web\obj\Debug\PhotoContest.Web.csproj.GenerateResource.Cache
