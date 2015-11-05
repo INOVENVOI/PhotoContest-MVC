@@ -6,8 +6,6 @@ using System.Web;
 namespace PhotoContest.Web.Models.ViewModels
 {
     using System.Linq.Expressions;
-    using AutoMapper;
-    using AutoMapper.QueryableExtensions;
     using PagedList;
     using PhotoContext.Models;
 

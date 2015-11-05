@@ -3,10 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Linq;
     using System.Linq.Expressions;
-    using AutoMapper;
-    using AutoMapper.QueryableExtensions;
     using PagedList;
     using PhotoContext.Models;
 
@@ -31,6 +28,8 @@
 
         [Display(Name = "Participants in contest")]
         public int ParticipantsCount { get; set; }
+            
+        public virtual RewardStrategy RewardStrategy { get; set; }
 
         public VotingStrategy VotingStrategy { get; set; }
 

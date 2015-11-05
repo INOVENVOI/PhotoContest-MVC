@@ -34,7 +34,6 @@
         [HttpGet]
         public ActionResult Archive(int page = 1, int pageSize = 5)
         {
-
             var contests = this.Data.Contests.All()
                 .Where(c => c.ContestStatus == ContestStatus.Finished)
                 .OrderByDescending(c => c.StartDate)

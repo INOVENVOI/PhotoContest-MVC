@@ -47,6 +47,8 @@
         [Required]
         public ContestStatus ContestStatus { get; set; }
 
+        public virtual RewardStrategy RewardStrategy { get; set; }
+
         public virtual VotingStrategy VotingStrategy { get; set; }
 
         public virtual ParticipationStrategy ParticipationStrategy { get; set; }
