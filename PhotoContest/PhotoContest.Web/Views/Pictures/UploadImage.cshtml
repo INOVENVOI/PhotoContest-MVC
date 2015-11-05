@@ -50,7 +50,8 @@
                     var picture = new Picture
                     {
                         ImageURL = newFileName,
-                        PostedOn = DateTime.Now
+                        PostedOn = DateTime.Now,
+                        Contests = new List<Contest>{context.Contests.Find(3)}
                     };
 
                     var userId = this.User.Identity.GetUserId();
@@ -64,8 +65,9 @@
                         User user = context.Users.FirstOrDefault(u => u.Id == userId);
                         picture.Owner = user;
                         picture.OwnerId = user.Id;
-
+                        
                         context.Users.FirstOrDefault(u => u.Id == userId).Pictures.Add(picture);
+                        context.Contests.Find(3).Pictures.Add(picture);
                         context.SaveChanges();
                     }
                     else

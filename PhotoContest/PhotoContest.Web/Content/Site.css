@@ -30,3 +30,28 @@ img {
 .large img {
     max-width: 100%;
 }
+
+#create-context-link {
+    position: relative;
+    bottom: 840px;
+    left: 160px;
+    font-size: 30px;
+}
+
+#firstParams input, select {
+    display: block;
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#secondParams {
+    position: relative;
+    left: 300px;
+    bottom: 280px;
+}
+
+#submitButton {
+    position: relative;
+    top: 10px;
+}

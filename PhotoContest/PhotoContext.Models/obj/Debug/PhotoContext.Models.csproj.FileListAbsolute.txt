@@ -81,30 +81,16 @@ C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoCo
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.xml
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\dimitar.stoyanov\Documents\GitHub\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.dll.config
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\PhotoContext.Models.pdb
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Helpers.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Mvc.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Razor.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Deployment.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Razor.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Helpers.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Mvc.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Razor.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Deployment.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.csprojResolveAssemblyReference.cache
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.dll
-C:\Users\Ivan Nikolov\Documents\SoftUni\ASP\TeamProject\PhotoContest-MVC\PhotoContest\PhotoContext.Models\obj\Debug\PhotoContext.Models.pdb
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Helpers.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Mvc.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Razor.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Helpers.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Mvc.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.Razor.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Daniela\Documents\PROGRAMMING\Level Back-end\ASP.NET MVC\PhotoContest-MVC\PhotoContest\PhotoContext.Models\bin\Debug\System.Web.WebPages.Razor.xml

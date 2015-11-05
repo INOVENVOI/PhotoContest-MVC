@@ -1,7 +1,7 @@
 ﻿@model PhotoContest.Web.Models.ViewModels.ContestDetailsViewModel
 
 <a href="@Url.Action("Details", "Contests",
-        new {Contests = @Model.Id})" data-toggle="tooltip" data-placement="top" title="@Model.ContestStatus">@Model.Title</a>
+        new {id = @Model.Id})" data-toggle="tooltip" data-placement="top" title="@Model.ContestStatus">@Model.Title</a>
         <p>Description: <b class="name">@Model.Description</b></p>
         <p>Organizer: <b class="name">@Model.Organizer.Username</b></p>
         <p>Status: <b class="name">@Model.ContestStatus.ToString()</b></p>

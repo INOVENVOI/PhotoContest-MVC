@@ -3,6 +3,10 @@
 @using Microsoft.AspNet.Identity
 @model PhotoContext.Models.Contest
 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
 @if (this.User.Identity.GetUserId() == null)
 {
     <h1 id="create-ContestTag">Pleace log on to create contest</h1>
@@ -18,9 +22,9 @@ else
             @Html.Label("Description:")
             @Html.TextBoxFor(m => m.Description)
             @Html.Label("StartDate")
-            @Html.TextBoxFor(m => m.StartDate, new { type = "time" })
+            @Html.TextBoxFor(m => m.StartDate, new { type = "date" })
             @Html.Label("EndDate:")
-            @Html.TextBoxFor(m => m.EndDate, new { type = "time" })
+            @Html.TextBoxFor(m => m.EndDate, new { type = "date" })
             @Html.Label("ParticipantsLimit:")
             @Html.TextBoxFor(m => m.ParticipantsLimit)
         </div>
