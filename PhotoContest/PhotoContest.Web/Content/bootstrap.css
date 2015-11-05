@@ -21,33 +21,40 @@
 
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 
-#create-Contest input, select {
+/*#create-context-link {
+    position: relative;
+    bottom: 840px;
+    left: 160px;
+    font-size: 30px;
+}
+
+#create-context-link #create-Contest input, select {
     display: block;
     position: relative;
     margin-top: 3px;
 }
 
-#create-Contest label {
+#create-context-link #create-Contest label {
     margin-top: 3px;
 }
 
-#create-Contest {
+#create-context-link #create-Contest {
     float: left;
     position: fixed;
     bottom: 310px;
     left: 1400px;
 }
 
-#secondParams {
+#create-context-link #secondParams {
     position: relative;
     left: 300px;
     bottom: 290px;
 }
 
-#submitButton {
+#create-context-link #submitButton {
     position: relative;
     top: 10px;
-}
+}*/
 
 article,
 aside,
